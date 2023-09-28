@@ -18,7 +18,7 @@ class SortRevenueByDateAndNameAPIView(APIView, ApiBaseView):
         else:
             data = "There is no any revenue yet"
 
-        return Response(data, status=status.HTTP_200_OK)
+        return Response({"response": data}, status=status.HTTP_200_OK)
 
 
 class SortRevenueByDateAPIView(APIView, ApiBaseView):
@@ -32,7 +32,7 @@ class SortRevenueByDateAPIView(APIView, ApiBaseView):
         else:
             data = "There is no any revenue yet"
 
-        return Response(data, status=status.HTTP_200_OK)
+        return Response({"response": data}, status=status.HTTP_200_OK)
 
 
 class SortRevenueByNameAPIView(APIView, ApiBaseView):
@@ -46,4 +46,4 @@ class SortRevenueByNameAPIView(APIView, ApiBaseView):
         else:
             data = "There is no any revenue yet"
 
-        return Response(data, status=status.HTTP_200_OK)
+        return Response({"response": data}, status=status.HTTP_200_OK)
